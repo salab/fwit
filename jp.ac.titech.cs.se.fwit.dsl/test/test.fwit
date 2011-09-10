@@ -1,0 +1,56 @@
+system test extends jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts.Struts;
+//system test extends jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails.Rails;
+
+type String mapped-to java.lang.String;
+type HTML mapped-to jp.ac.titech.cs.se.fwit.webapp.fwmodels.HTML;
+type Session mapped-to jp.ac.titech.cs.se.fwit.webapp.fwmodels.Session;
+type DBTable mapped-to jp.ac.titech.cs.se.fwit.webapp.fwmodels.DBTable;
+
+module Hoge{
+	
+    HTML newAccountPage, accountCreatedPage, newOrderPage, loginPage, orderConfirmPage;
+    DBTable user;
+    Session login;
+
+    function registerNewUser{
+		String name, pass;
+		
+		newAccountPage.post("createNewUser");
+		name = newAccountPage.read();
+		pass = newAccountPage.read();
+		
+		//if((name == null) | (pass == null)){
+		if(name == null | pass == null){ 
+	   		if (name == null ){
+	     		newAccountPage.setMsg("name is empty");
+	   		}
+	   		if (pass == null){
+	 		    newAccountPage.setMsg("empty password");
+			}
+	   		newAccountPage.render();
+	   		return;
+		}else if(pass.length() < 4){
+	    	newAccountPage.setMsg("pass is too short");
+	    	newAccountPage.render();
+	    	return;
+		}else{
+	    	user.insert(hash(pass));
+		}
+		accountCreatedPage.render();
+		return;
+    }
+
+    function newOrder{
+    	String order;
+		newOrderPage.post("newOrder");
+		order = newOrderPage.read();
+		if(!login){
+	   		loginPage.setMsg("please login");
+	   		loginPage.render();
+	   		return;
+		}
+		orderConfirmPage.setData(order);
+		orderConfirmPage.render();
+	}
+
+}

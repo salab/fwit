@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Fwit Web Application Framework Models
+Bundle-SymbolicName: jp.ac.titech.cs.se.fwit.webapp.fwmodels;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-ClassPath: .,
+ lib/commons-beanutils-1.8.0.jar,
+ lib/commons-collections-3.2.1.jar,
+ lib/commons-io-1.4.jar,
+ lib/freemarker.jar
+Export-Package: jp.ac.titech.cs.se.fwit.webapp.fwmodels,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.actions,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails.actions,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails.elements,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails.templates,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts.actions,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts.elements,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts.templates,
+ jp.ac.titech.cs.se.fwit.webapp.fwmodels.util.freemarker
+Require-Bundle: jp.ac.titech.cs.se.fwit.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: SAEKI Lab.

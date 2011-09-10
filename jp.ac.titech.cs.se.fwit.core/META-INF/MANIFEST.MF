@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Fwit Core
+Bundle-SymbolicName: jp.ac.titech.cs.se.fwit.core
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: lib/commons-beanutils-1.8.0.jar,
+ lib/commons-collections-3.2.1.jar,
+ lib/commons-io-1.4.jar,
+ lib/commons-logging-1.1.1.jar,
+ lib/log4j-1.2.16.jar,
+ lib/org.sat4j.core.jar,
+ .
+Export-Package: jp.ac.titech.cs.se.fwit.core,
+ jp.ac.titech.cs.se.fwit.core.derivation,
+ jp.ac.titech.cs.se.fwit.core.logic,
+ jp.ac.titech.cs.se.fwit.core.model,
+ jp.ac.titech.cs.se.fwit.core.model.composite,
+ jp.ac.titech.cs.se.fwit.core.model.composite.visitor,
+ jp.ac.titech.cs.se.fwit.core.model.fw,
+ jp.ac.titech.cs.se.fwit.core.model.fw.guard,
+ jp.ac.titech.cs.se.fwit.core.model.fw.visitor,
+ jp.ac.titech.cs.se.fwit.core.model.req,
+ jp.ac.titech.cs.se.fwit.core.model.req.action,
+ jp.ac.titech.cs.se.fwit.core.model.req.action.visitor,
+ jp.ac.titech.cs.se.fwit.core.model.req.guard,
+ jp.ac.titech.cs.se.fwit.core.model.req.visitor,
+ jp.ac.titech.cs.se.fwit.core.model.visitors,
+ jp.ac.titech.cs.se.fwit.core.util,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: SAEKI Lab.

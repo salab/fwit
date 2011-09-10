@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="jp.ac.titech.cs.se.fwit.webapp.fwmodels"
+         name="WebApp Frameworks"
+         point="jp.ac.titech.cs.se.fwit.dsl.fwitFWModel">
+      <fw class="jp.ac.titech.cs.se.fwit.webapp.fwmodels.struts.Struts" />
+      <fw class="jp.ac.titech.cs.se.fwit.webapp.fwmodels.rails.Rails" />
+   </extension>
+</plugin>

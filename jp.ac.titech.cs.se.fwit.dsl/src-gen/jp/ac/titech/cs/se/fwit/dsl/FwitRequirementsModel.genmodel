@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/jp.ac.titech.cs.se.fwit.dsl/src-gen"
+    editDirectory="/jp.ac.titech.cs.se.fwit.dsl.edit/src" editorDirectory="/jp.ac.titech.cs.se.fwit.dsl.editor/src"
+    modelPluginID="jp.ac.titech.cs.se.fwit.dsl" forceOverwrite="true" modelName="FwitRequirementsModel"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="jp.ac.titech.cs.se.fwit.dsl.edit"
+    editorPluginID="jp.ac.titech.cs.se.fwit.dsl.editor">
+  <genPackages prefix="FwitRequirementsModel" basePackage="jp.ac.titech.cs.se.fwit.dsl"
+      disposableProviderFactory="true" ecorePackage="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#/">
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FwitRequirementModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FwitRequirementModel/system"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FwitRequirementModel/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//SystemElement"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Include">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Include/file"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Type/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Type/className"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//SystemDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//SystemDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//SystemDeclaration/framework"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Module">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Module/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Module/fields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Module/functions"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FieldDeclaration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FieldDeclaration/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FieldDeclaration/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FunctionDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FunctionDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//FunctionDeclaration/body"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Block">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Block/statements"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Expression/leftOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Expression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Expression/rightOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Conjunction">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Conjunction/leftOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Conjunction/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Conjunction/rightOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Comparision">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Comparision/leftOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Comparision/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Comparision/rightOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ValueExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ValueExpression/leftOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ValueExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ValueExpression/rightOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Multiplication">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Multiplication/leftOperand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Multiplication/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Multiplication/rightOperand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//BasicExpression"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Name"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Literal"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//EString">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//EString/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//StringLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//StringLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IntegerLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IntegerLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//QualifiedExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//QualifiedExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//NullLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//NullLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//PrefixOperatorExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//PrefixOperatorExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//PrefixOperatorExpression/operand"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocationExpression">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocationExpression/receiver"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocationExpression/method"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//MethodInvocation/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//Statement"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//LocalVariableDeclaration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//LocalVariableDeclaration/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//LocalVariableDeclaration/variables"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IfStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IfStatement/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IfStatement/thenBlok"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//IfStatement/elseBlock"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ElseBlock"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ReturnStatement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ReturnStatement/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//TaskStatement"/>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//AssignmentStatement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//AssignmentStatement/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//AssignmentStatement/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//AssignmentStatement/value"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ParExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//ParExpression/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//VariableDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/jp.ac.titech.cs.se.fwit.dsl/src-gen/jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.ecore#//VariableDeclaration/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,144 @@
+grammar jp.ac.titech.cs.se.fwit.dsl.FwitRequirementsModel with org.eclipse.xtext.common.Terminals
+
+generate fwitRequirementsModel "http://www.ac.jp/titech/cs/se/fwit/dsl/FwitRequirementsModel"
+
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
+
+
+FwitRequirementModel:
+	(system=SystemDeclaration)? (elements+=SystemElement)*;
+	
+SystemElement:
+	Include	| Type |Module;
+
+Include:
+	'include' file=STRING;
+	
+Type:	
+	//'type' name=ID 'mapped-to' className=[types::JvmType|QualifiedName]';';
+	'type' name=ID 'mapped-to' className=QualifiedName';';
+	/*'type' (className=QualifiedName 'as')? name=ID';';*/
+	
+	
+SystemDeclaration:
+	'system' name=ID 'extends' framework=QualifiedExpression';';
+	
+Module:
+	'module' name=ID '{'
+		(fields+=FieldDeclaration)*
+		(functions+=FunctionDeclaration)*
+	'}';
+	
+FieldDeclaration:
+	type=[Type] variables+=VariableDeclaration (','variables+=VariableDeclaration)*';';
+	
+	
+FunctionDeclaration:
+	'function' name=ID body=Block;
+
+Block:
+	'{' (statements+=Statement)* '}';
+
+Comparator:
+    '=='|'!='|'<='|'>='|'>'|'<';
+
+AddOperator:
+	'+'|'-';
+
+MultiOperator:
+	'*'|'%'|'/';
+
+Expression:
+	leftOperand=Conjunction	 (operator='|' rightOperand=Expression)?;
+	
+Conjunction:
+	leftOperand=Comparision (operator='&' rightOperand=Conjunction)?;
+	
+Comparision:
+	leftOperand=ValueExpression (operator=Comparator rightOperand=Comparision)?;
+
+ValueExpression:
+	leftOperand=Multiplication (operator=AddOperator rightOperand=ValueExpression)?;
+
+Multiplication:
+	leftOperand=BasicExpression (operator=MultiOperator rightOperand=BasicExpression)?;
+	
+BasicExpression:
+	ParExpression|
+	PrefixOperatorExpression|
+	MethodInvocationExpression|
+	QualifiedExpression|
+	Name;
+	
+Name:
+	Literal;
+	
+Literal:	
+	SimpleLiteral|StringLiteral|IntegerLiteral|NullLiteral;
+	
+SimpleLiteral returns EString:
+	value=ID;
+	
+StringLiteral:
+	value=STRING;
+	
+IntegerLiteral:
+	value=INT;
+	
+QualifiedExpression:
+	value=QualifiedName;
+	
+NullLiteral:
+	value=NullExpression;
+	
+NullExpression:
+	'null';
+	
+PrefixOperatorExpression:
+	operator=PrefixOperator operand=Expression;
+	
+MethodInvocationExpression:
+	(receiver=[VariableDeclaration] '.')? method=MethodInvocation;
+
+MethodInvocation:
+	name=SimpleLiteral'(' (arguments+=Expression(','arguments+=Expression)*)?')';
+
+Statement:
+	IfStatement|
+	(LocalVariableDeclaration | TaskStatement | ReturnStatement)';';
+
+LocalVariableDeclaration:
+	type=[Type] variables+=VariableDeclaration (','variables+=VariableDeclaration)*;
+	
+IfStatement:
+	'if' condition=ParExpression thenBlok=Block ('else' elseBlock=ElseBlock)?;
+	
+ElseBlock:
+    Block | IfStatement;
+	
+ReturnStatement:
+	value = 'return' ;
+	
+TaskStatement:
+	AssignmentStatement | MethodInvocationExpression;
+	
+AssignmentStatement:
+	variable=[VariableDeclaration] operator=AssignmentOperator value=Expression;
+
+ParExpression:
+        '(' expression=Expression ')';
+
+VariableDeclaration:
+	name=ID; // should varilable name be "name"?	
+
+
+PrefixOperator:
+        '!';
+
+AssignmentOperator:
+		'=';
+
+QualifiedName:
+	ID ( '.' ID )*;
+
+

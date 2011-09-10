@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+   <extension-point id="fwitFWModel" name="Framework Model" schema="schema/fwitFWModel.exsd"/>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.ac.jp/titech/cs/se/fwit/dsl/FwitRequirementsModel" 
+       class = "jp.ac.titech.cs.se.fwit.dsl.fwitRequirementsModel.FwitRequirementsModelPackage"
+       genModel = "jp/ac/titech/cs/se/fwit/dsl/FwitRequirementsModel.genmodel" /> 
+	
+  </extension>
+
+
+
+
+
+</plugin>
