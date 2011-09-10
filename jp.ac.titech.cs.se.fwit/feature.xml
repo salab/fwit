@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="jp.ac.titech.cs.se.fwit"
+      label="Fwit: Framework Instantiation Toolkit"
+      version="0.0.1.qualifier"
+      provider-name="SAEKI Lab."
+      plugin="jp.ac.titech.cs.se.fwit.core">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.xtext"/>
+      <import plugin="org.eclipse.xtext.util"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.common"/>
+      <import plugin="org.antlr.runtime"/>
+      <import plugin="org.eclipse.xtext.common.types"/>
+      <import plugin="org.eclipse.core.runtime" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.xtext.ui"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.xtext.ui.shared"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.xtext.builder"/>
+      <import plugin="org.eclipse.xtext.common.types.ui"/>
+      <import plugin="org.eclipse.jdt.core"/>
+   </requires>
+
+   <plugin
+         id="jp.ac.titech.cs.se.fwit.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="jp.ac.titech.cs.se.fwit.dsl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="jp.ac.titech.cs.se.fwit.dsl.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
